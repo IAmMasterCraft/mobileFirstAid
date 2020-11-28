@@ -88,13 +88,15 @@ nav{
     color: white;
 }
 .contents_burns{
-    width: 100%;
-    position: absolute;
-    margin-top: 5rem;
+    display: none;
+    flex-direction: column;
     min-width: 300px;
-    max-width: 1200px;
-    display: flex;
+    align-items: center;
     justify-content: center;
+    max-width: 2000px;
+    width: 100%;
+    margin-top: 5rem;
+    position: absolute;
 }
 .contents_burns p{
     width: 80%;
@@ -160,6 +162,7 @@ nav a{
     justify-content: center;
     background-color:var(--dark);
     box-shadow: 4px 5px 8px var(--light-gray);
+    border-radius: 20px;
 }
 .emergencies .each_emergencies a{
     display: flex;
@@ -215,17 +218,7 @@ nav a{
     width: 50%;
 }
 .major_burns .major{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-.contents_burns{
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 2400px;
-    width: 100%;
+    margin-bottom: 2rem;
 }
 .contents_burns a,.contents_burns a,.contents_drown a,.electric_contents a{
     align-self: start;
@@ -238,8 +231,8 @@ nav a{
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    min-width: 300px;
-    margin-left: 2rem;
+    min-width: 200px;
+    /* margin-left: 2rem; */
 }
 .minor h3{
     font-size: 1.7rem;
@@ -247,18 +240,31 @@ nav a{
 }
 .major_burns h2{
     margin-top: 2rem;
+    min-width: 200px;
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 .major_burns ul{
     margin-bottom: 1rem;
+    align-items: center;
+    min-width: 300px;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    width: 80%;
 }
-.major_burns li{
+.major_burns ul li{
     list-style: circle;
     font-size: 1.3rem;
+    height: 100px;
 }
 .major_burns .call{
     font-weight: 600;
     margin: 1rem 0;
-    text-align: center;
+    min-width: 300px;
+    max-width: 1200px;
 }
 .list{
     display: none;
@@ -269,7 +275,7 @@ nav a{
     align-items: center;
 }
 .contents_drown{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -290,7 +296,7 @@ nav a{
     width: 75%;
 }
 .electric_contents{
-    display: flex;
+    display: none;
     position: absolute;
     margin-top: 5rem;
     max-width: 2000px;
@@ -379,6 +385,7 @@ nav a{
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        height: 6rem;
     }
 
     .list ul a{
@@ -387,9 +394,9 @@ nav a{
     }
     .header{
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         background-color: var(--dark);
-        height: 5rem;
+        height: 6rem;
         width: 100%;
         justify-content: space-between;
         position: fixed;
@@ -438,7 +445,7 @@ nav a{
         margin-top: 7rem;
         position: absolute;
         max-width: 2000px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -481,6 +488,6 @@ nav a{
         height: 300px;
     }
     .electric_contents{
-        margin-top: 10rem;
+        margin-top: 7rem;
     }
 }

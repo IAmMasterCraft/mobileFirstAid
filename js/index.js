@@ -1,20 +1,3 @@
-const loader=()=>{
-    const loaded=document.getElementById('loader');
-    const poison_div=document.querySelector('.all')
-    const emergency=document.querySelector('.emergencies')
-        setTimeout(() => {
-            loaded.style.display='none';
-            poison_div.style.display='flex'
-        }, 3000);
-        setTimeout(() => {
-            loaded.style.display='none';
-            emergency.style.display='flex'
-        }, 3000);
-}
-loader();
-
-
-
 const allFunction=()=>{
     const navToggler=()=>{
         const navBar=document.querySelector('.navBars')

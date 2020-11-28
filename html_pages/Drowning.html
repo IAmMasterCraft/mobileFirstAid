@@ -39,7 +39,10 @@
             </ul>
         </div>
     </div>
-    <div class="contents_drown">
+    <div id="loader">
+        <img src="../images/animation.svg" alt="loader"/>
+    </div>
+    <div class="contents_drown fade-in">
         <a href="./Accidents.html"><i class="fa fa-arrow-left"></i>Accidents and Emergencies</a>
         <h2>Drowning</h2>
         <div class="img_div drowning">
@@ -56,6 +59,14 @@
         </p>
         <p class="note"><b>IF YOU DO NOT KNOW HOW TO SWIM, DO NOT JUMP INTO THE WATER IMMEDIATELY CALL FOR HELP</b></p>
     </div>
+    <script>
+        const loaded=document.getElementById('loader')
+        const contents_drown=document.querySelector('.contents_drown')
+        setTimeout(() => {
+            loaded.style.display='none';
+            contents_drown.style.display='flex'
+        }, 3000);
+    </script>
     <script src="../js/index.js"></script>
 </body>
 </html>

@@ -39,7 +39,10 @@
             </ul>
         </div>
     </div>
-    <div class="electric_contents">
+    <div id="loader">
+        <img src="../images/animation.svg" alt="loader"/>
+    </div>
+    <div class="electric_contents fade-in">
         <a href="./Accidents.html"><i class="fa fa-arrow-left"></i>Accidents and Emergencies</a>
         <h2>Electric Shock</h2>
         <div class="img_div">
@@ -64,6 +67,14 @@
             <img src="../images/electrical_burn.jpg" alt="electrical_burn"/>
         </div>
     </div>
+    <script>
+        const loaded=document.getElementById('loader')
+        const electric_contents=document.querySelector('.electric_contents')
+        setTimeout(() => {
+            loaded.style.display='none';
+            electric_contents.style.display='flex'
+        }, 3000);
+    </script>
     <script src="../js/index.js"></script>
 </body>
 </html>

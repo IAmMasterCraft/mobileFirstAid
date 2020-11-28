@@ -34,7 +34,7 @@
     <div id="loader">
         <img src="../images/animation.svg" alt="onSkin"/>
     </div>
-    <div class="all">
+    <div class="all fade-in">
         <div class="contents">
             <a href="./Accidents.html"><i class="fa fa-arrow-left"></i>Accidents and Emergencies</a>
             <div class="main">
@@ -124,6 +124,14 @@
             </div> -->
         </div>
     </div>
+    <script>
+        const loaded=document.getElementById('loader')
+        const poisoning=document.querySelector('.all')
+        setTimeout(() => {
+            loaded.style.display='none';
+            poisoning.style.display='flex'
+        }, 3000);
+    </script>
     <script src="../js/index.js"></script>
 </body>
 </html>
