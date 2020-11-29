@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(206, 206, 235);
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.all p{
+    font-size: 2rem;
+}
+.all a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+.all .home{
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+}
+.all .home a{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color:#484a67;
+}

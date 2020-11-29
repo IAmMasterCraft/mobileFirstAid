@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poisoning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../styles/general.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="./index.html">Innovation Geeks</a>
+            <div class="navBars">
+                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-times fa-2x"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="lists">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="loader">
+        <img src="../images/animation.svg" alt="onSkin"/>
+    </div>
+    <div class="all fade-in">
+        <div class="contents">
+            <a href="./Accidents.html"><i class="fa fa-arrow-left"></i>Accidents and Emergencies</a>
+            <div class="main">
+                <div class="main_1">
+                    <div class="img_div">
+                        <img src="../images/30206.jpg" alt="poisoning"/>
+                    </div>
+                    <h3>POISONING:</h3>
+                    <p>
+                        People, especially children, poison themselves by eating or drinking wrong things or by taking 
+                        too much medicine or tablets.
+                    </p>
+                </div>
+                <div class="main_2">
+                    <div class="img_div">
+                        <img src="../images/47428.jpg" alt="vomitting"/>
+                    </div>
+                    <h3> Acids in batteries,<br/> Caustic soda:</h3>
+                    <p>
+                        Make the person vomit by putting your finger in their throat or by making them drink water with salt. Take them to the health centre immediately.
+                    </p>
+                </div>
+                <div class="main_3">
+                    <div class="img_div">
+                        <img src="../images/32753.jpg" alt="milk"/>
+                    </div>
+                    <h3> Kerosene or petrol:</h3>
+                    <p>
+                        Do not make the person vomit.
+                        Give the person milk or water to drink in order to dilute the poison in the stomach. Take to the health centre immediately.           
+                    </p>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="inhaled">
+                    <div>
+                        <h3>Inhaled</h3>
+                        <p>
+                            Immediately get the person to fresh air, without placing yourself at risk. Loosen any tight clothing at the neck.
+    
+                            Open doors and windows, if indoors.
+    
+                            Avoid breathing fumes. Do not try to rescue an unconscious person, where a highly toxic or unknown gas is involved, without a breathing apparatus. You may become a victim yourself.
+                        </p>
+                    </div>
+                    <div class="img_div fade-in">
+                        <img src="../images/inhale.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="onSkin">
+                    <div>
+                        <h3>Skin</h3>
+                        <p>
+                            On the skin
+                            Carefully remove contaminate clothing and wash exposed areas with copious amounts of room temperature water.
+                            
+                            In the eye
+                            Rinse eyes with a slow gentle stream of water from a cup or a jug for 10 to 15 minutes. Allow the stream to flow from the inner corner across the eye to the outer corner.
+                            
+                            Do not apply eye drops.
+                        </p>
+                    </div>
+                    <div class="img_div fade-in">
+                        <img src="../images/skin.jpg" alt="onSkin"/>
+                    </div>
+                </div>
+                <div class="Swallowed">
+                    <div>
+                        <h3>Swallowed</h3>
+                        <p>
+                            If the person is alert:
+
+                            Do not induce vomiting. Immediately rinse the mouth.
+
+                            Keep the product or medicine container handy.
+                        </p>
+                    </div>
+                    <div class="img_div fade-in">
+                        <img src="../images/swallowed.jpg" alt="swallowed"/>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer">
+                <a href="tel:08091960477">Emergency No: 08091960477</a>
+                <p>S<span>A</span><span>F</span><span>T</span><span>E</span><span>Y</span></p>
+                <p>&copy;Innovation Geeks</p>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        const loaded=document.getElementById('loader')
+        const poisoning=document.querySelector('.all')
+        setTimeout(() => {
+            loaded.style.display='none';
+            poisoning.style.display='flex'
+        }, 3000);
+    </script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
