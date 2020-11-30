@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@
 body{
     background-color: var(--light);
     height: 100vh;
-    font-family:'Comic Sans MS', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .all{
     display: none;
@@ -93,7 +94,7 @@ nav{
     min-width: 300px;
     align-items: center;
     justify-content: center;
-    max-width: 2000px;
+    max-width: 3000px;
     width: 100%;
     margin-top: 5rem;
     position: absolute;
@@ -200,8 +201,6 @@ nav a{
     display: flex;
     align-self: start;
     margin-left: 2rem;
-    /* font-size: 1.5rem;
-    margin-top: 3rem; */
 }
 .img_div{
     width: 300px;
@@ -232,7 +231,6 @@ nav a{
     align-items: center;
     margin-top: 2rem;
     min-width: 200px;
-    /* margin-left: 2rem; */
 }
 .minor h3{
     font-size: 1.7rem;
@@ -286,7 +284,6 @@ nav a{
 .contents_drown p{
     font-size: 1.5rem;
     width: 80%;
-    letter-spacing: 2px;
     margin-bottom: 4rem;
 }
 .drowning img{
@@ -320,6 +317,56 @@ nav a{
 .categories{
     margin-bottom: 5rem;
 }
+/* The steps to follow  for drowning*/
+.contents_drown .steps .text ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-width: 1500px;
+    margin-bottom: 2rem;
+    width: 100%;
+    align-self: start;
+}
+.contents_drown .steps .text ol img{
+    width: 300px;
+    height: 200px;
+    border-radius: 1px solid black;
+}
+.contents_drown .steps .text ol li{
+    width: 80%;
+    min-height: 100px;
+    list-style-type: circle;
+    max-height: 250px;
+}
+.contents_drown .steps .text ol .top{
+    list-style:square;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.contents_drown .steps .img_steps{
+    display: none;
+}
+/* Steps for major burns */
+.contents_burns .major_burns .major_steps{
+    min-height: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Steps for minor burns */
+.minor ul{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 80%;
+    min-height: 900px;
+    justify-content: space-between;
+}
+.minor ul li{
+    list-style: disc;
+}
 @media(min-width:550px){
     .emergencies .each_emergencies{
         height: 12rem;
@@ -331,14 +378,43 @@ nav a{
     }
 }
 @media(min-width:800px){
+    /* Burns */
+    .contents_burns ul li{
+        font-size: 1.7rem;
+    }
+    /* drowning steps on desktop */
+    .contents_drown .steps .text ol img{
+        display: none;
+    }
+    .contents_drown .steps .text ol li{
+        font-size: 1.6rem;
+    }
+    .contents_drown .steps .img_steps{
+        display: flex;
+        flex-direction: column;
+        height: 2200px;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .contents_drown .steps{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contents_drown .steps .img_steps img{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        border-radius: 1px solid black;
+    }
+    .contents_drown .steps .text ol .top{
+        font-size: 1.5rem;
+    }
     .main p,.main h3{
         font-size: 1.5rem;
     }
     .contents a{
         font-size: 1.8rem;
-    }
-    .header nav a{
-        font-size: 2.5rem;
     }
     .emergencies .each_emergencies{
         height: 12rem;
@@ -348,7 +424,7 @@ nav a{
     }
     .emergencies .each_emergencies a{
         color: white;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .emergencies{
         margin-top: 7rem;
@@ -356,18 +432,8 @@ nav a{
     .navBars{
         display: none;
     }
-    .lists{
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
-        margin-top: 0;
-        justify-content: flex-end;
-    }
-    .lists ul{
-        flex-direction: row;
-        position: relative;
-        width: 70%;
-        justify-content: space-around;
+    .header nav .logo{
+        font-size: 2rem;
     }
     .lists ul li a{
         color: white;
@@ -377,30 +443,22 @@ nav a{
         display: flex;
         justify-content: space-between;
         width: 60%;
+        align-items: center;
     }
     .list ul{
         display: flex;
         flex-direction: row;
         color: white;
-        align-items: center;
+        /* align-items: center; */
         justify-content: space-around;
         width: 100%;
-        height: 6rem;
     }
-
-    .list ul a{
-        font-size: 1.6rem;
-        color: white;
-    }
-    .header{
-        display: flex;
-        /* align-items: center; */
+    nav{
         background-color: var(--dark);
         height: 6rem;
-        width: 100%;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 10;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     .main{
         display: flex;
@@ -455,7 +513,7 @@ nav a{
         width: 80%;
         flex-direction: column;
         max-width: 1500px;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .contents_drown .img_div{
         width: 80%;
