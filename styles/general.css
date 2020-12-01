@@ -186,7 +186,7 @@ nav a{
 }
 .contents{
     position: absolute;
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -380,9 +380,6 @@ nav a{
     flex-direction: column;
 }
 .back{
-    background-color: var(--blue);
-    width: 5rem;
-    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -392,6 +389,7 @@ nav a{
     margin-left: 1rem;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: var(--dark);
 }
 .contact_us .card{
     min-height: 400px;
