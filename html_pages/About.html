@@ -42,34 +42,40 @@
     <div id="loader">
         <img src="../images/animation.svg" alt="loader"/>
     </div>
-    <div class="contact_us">
-        <a href="./Accidents.html" class="back"><i class="fa fa-arrow-left"></i>Back</a>
+    <div class="about_us">
         <div class="image">
-            <img src="../images/contact-1.png"/>
+            <img src="../images/about.jpg" alt="About-Us"/>
         </div>
-        <div class="card">
-            <card>
-                <i class="fa fa-phone"></i>
-                <div class="details">
-                    <p>Contact Us:</p>
-                    <a href="tel:+19145956140">+19145956140</a>
+        <a href="./Accidents.html" class="back"><i class="fa fa-arrow-left"></i>Back</a>
+        <div class="about">
+            <div class="vision">
+                <h2>Our Vision</h2>
+                <p>To be the leading centre of excellence, to provide the best firstaid treatment available.
+                    To provide first and immediate assistance to any person suffering from either a minor or serious illness or injury,to preserve life, prevent the condition from worsening, and promote recovery.</p>
+            </div>
+            <div class="values">
+                <h2>Our Values</h2>
+                <div class="value1">
+                    <h3>Respect</h3>
+                    <p>We respect the dignity of each individual at all times. Every decision made by each individual is fully respected.</p>
                 </div>
-            </card>
-            <card>
-                <i class="fa fa-comments"></i>
-                <div class="details">
-                    <p>Message Us:</p>
-                    <a href="sms://+19145956140">+19145956140</a>
+                <div class="value2">
+                    <h3>Teamwork</h3>
+                    <p>One of the most important values is teamwork, we recognize, embrace and capitalize on the unique talents of everyone. Teamwork creates better result.</p>
                 </div>
-            </card>
+                <div class="value3">
+                    <h3>Compassion</h3>
+                    <p>We demonstrate our sincere compassion to all. We try our possible best to provide the best treatment to others</p>
+                </div>
+            </div>
         </div>
     </div>
     <script>
         const loaded=document.getElementById('loader')
-        const contact_us=document.querySelector('.contact_us')
+        const about_us=document.querySelector('.about_us')
         setTimeout(() => {
             loaded.style.display='none';
-            contact_us.style.display='flex'
+            about_us.style.display='flex'
         }, 3000);
     </script>
     <script src="../js/index.js"></script>

@@ -367,6 +367,122 @@ nav a{
 .minor ul li{
     list-style: disc;
 }
+/* contact us page */
+.contact_us{
+    position: absolute;
+    margin-top: 5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: column;
+}
+.back{
+    background-color: var(--blue);
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    color: white;
+    align-self: start;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.contact_us .card{
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 200px;
+    width: 80%;
+    max-width: 1500px;
+    align-items: center;
+}
+.contact_us .card card{
+    background-color: rgb(210, 242, 255);
+    width: 80%;
+    height: 100%;
+    min-height: 160px;
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.contact_us .card card .fa{
+    transform: scale(3);
+}
+.contact_us .card .details{
+    min-height: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.contact_us .card card p,.contact_us .card card a{
+    font-size: 1.4rem;
+    min-width: 200px;
+    width: 80%;
+}
+.contact_us .image img{
+    width: 100%;
+}
+/* About Us */
+.about_us{
+    display: none;
+    flex-direction: column;
+    margin-top: 3rem;
+    position: absolute;
+}
+.about_us img{
+    width: 100%;
+    height: 300px;
+}
+.about_us .back{
+    position: absolute;
+    margin-top: 1em;
+}
+.about_us .about{
+    min-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.about_us .about  h3{
+    text-decoration: underline;
+    min-width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about_us .about h2{
+    font-size: 2rem;
+}
+.about_us .about p{
+    font-size: 1.5rem;
+}
+.about_us .about .vision{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about_us .about .values{
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 @media(min-width:550px){
     .emergencies .each_emergencies{
         height: 12rem;
@@ -375,6 +491,24 @@ nav a{
     }
     .emergencies .each_emergencies a{
         font-size: 1.5rem;
+    }
+    .lists{
+        display: none;
+    }
+    .about_us .about{
+        min-height: 800px;
+    }
+    .about_us .about .vision{
+        min-height: 200px;
+    }
+    .about_us .about .values{
+        min-height: 500px;
+    }
+    .about_us img{
+        margin-top: 3rem;
+    }
+    .about_us .back{
+        margin-top: 4rem;
     }
 }
 @media(min-width:800px){
@@ -435,10 +569,6 @@ nav a{
     .header nav .logo{
         font-size: 2rem;
     }
-    .lists ul li a{
-        color: white;
-        cursor: pointer;
-    }
     .list{
         display: flex;
         justify-content: space-between;
@@ -470,6 +600,10 @@ nav a{
         justify-content: space-around;
     }
     .lists{
+        display: none;
+        background-color: transparent;
+    }
+    .lists ul{
         display: none;
     }
     .categories{
@@ -548,4 +682,62 @@ nav a{
     .electric_contents{
         margin-top: 7rem;
     }
+    /* contact us page */
+.contact_us{
+    position: absolute;
+    margin-top: 8rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: column;
+}
+.contact_us .back{
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+.contact_us .card{
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 250px;
+    width: 80%;
+    max-width: 1700px;
+    align-items: center;
+}
+.contact_us .card card{
+    background-color: rgb(210, 242, 255);
+    width: 80%;
+    height: 100%;
+    min-height: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin:0 1rem;
+}
+.contact_us .card card .fa{
+    transform: scale(4);
+}
+.contact_us .card .details{
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center
+}
+.contact_us .card card p,.contact_us .card card a{
+    font-size: 2rem;
+    min-width: 200px;
+    width: 80%;
+}
 }
