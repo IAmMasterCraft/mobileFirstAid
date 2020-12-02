@@ -1,21 +1,24 @@
-const allFunction=()=>{
-    const navToggler=()=>{
-        const navBar=document.querySelector('.navBars')
-        const navBars=document.querySelector('.fa-bars')
-        const navCancel=document.querySelector('.fa-times')
-        const lists=document.querySelector('.lists')
-        navBar.addEventListener('click',()=>{
-            if(navCancel.style.display=='none'){
-                navCancel.style.display='block';
-                navBars.style.display='none';
-                lists.style.display="flex";
-            }
-            else{
-                navBars.style.display='flex'
-                navCancel.style.display='none';
-                lists.style.display="none";
-            }
-        })
+const allFunction = () => {
+    const navToggler = () => {
+        const navBar = document.querySelector('.navBars')
+        const navBars = document.querySelector('.fa-bars')
+        const navCancel = document.querySelector('.fa-times')
+        const lists = document.querySelector('.lists')
+        try {
+            navBar.addEventListener('click', () => {
+                if (navCancel.style.display == 'none') {
+                    navCancel.style.display = 'block';
+                    navBars.style.display = 'none';
+                    lists.style.display = "flex";
+                } else {
+                    navBars.style.display = 'flex'
+                    navCancel.style.display = 'none';
+                    lists.style.display = "none";
+                }
+            })
+        } catch (error) {
+            //
+        }
     }
     navToggler();
     // const colorLoaders=()=>{

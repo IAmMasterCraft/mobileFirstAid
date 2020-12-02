@@ -1,94 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-:root{
-    --wine:#cf6679;
-    --blue:#03dac6;
-    --grayish:#484a67;
-    --light-gray:#7e8987;
-    --green:#2c5f2d;
-    --dim-green:#97bc62ff;
-    --purple:#5f4b8bff;
-    --pink:#e69a8dff;
-    --dark:#00203fff;
-    --light:#adefd1ff;
+
+:root {
+    --wine: #cf6679;
+    --blue: #03dac6;
+    --grayish: #484a67;
+    --light-gray: #7e8987;
+    --green: #2c5f2d;
+    --dim-green: #97bc62ff;
+    --purple: #5f4b8bff;
+    --pink: #e69a8dff;
+    --dark: #00203fff;
+    --light: #adefd1ff;
 }
-body{
+
+body {
     background-color: var(--light);
     height: 100vh;
-    font-family:'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.all{
+
+.all {
     display: none;
 }
+
 .fade-in {
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
     -moz-animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
-  }@keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-moz-keyframes fadeIn {
+}
+
+@-moz-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-webkit-keyframes fadeIn {
+}
+
+@-webkit-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-#loader{
+}
+
+#loader {
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     display: block;
     background-image: url('../images/animation.svg');
-
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    background-color:var(--dark);
+    background-color: var(--dark);
     z-index: 10;
     height: 4rem;
     overflow: hidden;
     color: white;
 }
-.main .img_div img{
+
+.img_div img {
     width: 50%;
 }
-.categories .img_div img{
+
+.main {
+    width: 100%
+}
+
+.categories .img_div img {
     width: 100%;
 }
-.header nav a{
+
+.header nav a {
     font-size: 1.7rem;
     color: white;
 }
-.contents_burns{
+
+.contents_burns {
     display: none;
     flex-direction: column;
     min-width: 300px;
@@ -99,30 +115,38 @@ nav{
     margin-top: 5rem;
     position: absolute;
 }
-.contents_burns p{
+
+.contents_burns p {
     width: 80%;
     font-size: 1.4rem;
 }
-img{
+
+img {
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-nav a,nav .navBars{
+
+nav a,
+nav .navBars {
     margin: 1rem;
 }
-.navBars .fa-times{
+
+.navBars .fa-times {
     display: none;
 }
-.navBars{
+
+.navBars {
     cursor: pointer;
     margin-right: 2rem;
 }
-nav a{
+
+nav a {
     font-size: 2rem;
 }
-.lists{
+
+.lists {
     display: none;
     width: 100%;
     align-items: center;
@@ -132,21 +156,25 @@ nav a{
     z-index: 2;
     margin-top: 3.3rem;
 }
-.lists ul{
+
+.lists ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 200px;
 }
-.lists ul li a{
+
+.lists ul li a {
     color: white;
 }
-.navToggle{
+
+.navToggle {
     display: flex;
 }
-.emergencies{
-    display: none;
+
+.emergencies {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     min-width: 300px;
@@ -154,18 +182,20 @@ nav a{
     margin-top: 4rem;
     width: 100%;
 }
-.emergencies .each_emergencies{
+
+.emergencies .each_emergencies {
     width: 120px;
     height: 5rem;
     margin: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    background-color:var(--dark);
+    background-color: var(--dark);
     box-shadow: 4px 5px 8px var(--light-gray);
     border-radius: 20px;
 }
-.emergencies .each_emergencies a{
+
+.emergencies .each_emergencies a {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -177,16 +207,14 @@ nav a{
     align-self: center;
     width: 100%;
 }
-.emergencies .each_emergencies:hover{
-    background: linear-gradient(
-        to right,
-        var(--purple),
-        var(--pink)
-    );
+
+.emergencies .each_emergencies:hover {
+    background: linear-gradient( to right, var(--purple), var(--pink));
 }
-.contents{
+
+.contents {
     position: absolute;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -194,49 +222,62 @@ nav a{
     justify-content: center;
     align-items: center;
 }
-.contents p{
+
+.contents p {
     width: 300px;
 }
-.contents a{
+
+.contents a {
     display: flex;
     align-self: start;
     margin-left: 2rem;
 }
-.img_div{
-    width: 300px;
-    border: 2px solid black;
-    height: 200px;
+
+.img_div {
+    /* width: 300px; */
+    /* border: 2px solid black; */
+    /* height: 200px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 2rem 0;
     overflow: hidden;
-    background-color: white;
+    float: right;
+    /* background-color: white; */
 }
-.img_div img{
+
+.img_div img {
     width: 50%;
 }
-.major_burns .major{
+
+.major_burns .major {
     margin-bottom: 2rem;
 }
-.contents_burns a,.contents_burns a,.contents_drown a,.electric_contents a{
+
+.contents_burns a,
+.contents_burns a,
+.contents_drown a,
+.electric_contents a {
     align-self: start;
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-.major_burns{
+
+.major_burns {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
     min-width: 200px;
 }
-.minor h3{
+
+.minor h3 {
     font-size: 1.7rem;
     margin-bottom: 2rem;
 }
-.major_burns h2{
+
+.major_burns h2 {
     margin-top: 2rem;
     min-width: 200px;
     display: flex;
@@ -245,7 +286,8 @@ nav a{
     justify-content: center;
     width: 80%;
 }
-.major_burns ul{
+
+.major_burns ul {
     margin-bottom: 1rem;
     align-items: center;
     min-width: 300px;
@@ -253,26 +295,31 @@ nav a{
     max-width: 1200px;
     width: 80%;
 }
-.major_burns ul li{
+
+.major_burns ul li {
     list-style: circle;
     font-size: 1.3rem;
     height: 100px;
 }
-.major_burns .call{
+
+.major_burns .call {
     font-weight: 600;
     margin: 1rem 0;
     min-width: 300px;
     max-width: 1200px;
 }
-.list{
+
+.list {
     display: none;
 }
-.minor{
+
+.minor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contents_drown{
+
+.contents_drown {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -281,18 +328,22 @@ nav a{
     position: absolute;
     max-width: 1200px;
 }
-.contents_drown p{
+
+.contents_drown p {
     font-size: 1.5rem;
     width: 80%;
     margin-bottom: 4rem;
 }
-.drowning img{
+
+.drowning img {
     width: 100%;
 }
-.burns img{
+
+.burns img {
     width: 75%;
 }
-.electric_contents{
+
+.electric_contents {
     display: none;
     position: absolute;
     margin-top: 5rem;
@@ -301,24 +352,31 @@ nav a{
     align-items: center;
     flex-direction: column;
 }
-.electric_contents p{
+
+.electric_contents p {
     font-size: 1.6rem;
     width: 80%;
 }
-.electric_contents ul{
+
+.electric_contents ul {
     font-size: 1.5rem;
     width: 80%;
     margin-top: 2rem;
 }
-.electric_contents ul li{
+
+.electric_contents ul li {
     margin-top: 2rem;
     list-style: circle;
 }
-.categories{
+
+.categories {
     margin-bottom: 5rem;
 }
+
+
 /* The steps to follow  for drowning*/
-.contents_drown .steps .text ol{
+
+.contents_drown .steps .text ol {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,35 +386,45 @@ nav a{
     width: 100%;
     align-self: start;
 }
-.contents_drown .steps .text ol img{
+
+.contents_drown .steps .text ol img {
     width: 300px;
     height: 200px;
     border-radius: 1px solid black;
 }
-.contents_drown .steps .text ol li{
+
+.contents_drown .steps .text ol li {
     width: 80%;
     min-height: 100px;
     list-style-type: circle;
     max-height: 250px;
 }
-.contents_drown .steps .text ol .top{
-    list-style:square;
+
+.contents_drown .steps .text ol .top {
+    list-style: square;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 700;
 }
-.contents_drown .steps .img_steps{
+
+.contents_drown .steps .img_steps {
     display: none;
 }
+
+
 /* Steps for major burns */
-.contents_burns .major_burns .major_steps{
+
+.contents_burns .major_burns .major_steps {
     min-height: 1700px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
 /* Steps for minor burns */
-.minor ul{
+
+.minor ul {
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -364,88 +432,91 @@ nav a{
     min-height: 900px;
     justify-content: space-between;
 }
-.minor ul li{
+
+.minor ul li {
     list-style: disc;
 }
-@media(min-width:550px){
-    .emergencies .each_emergencies{
+
+@media(min-width:550px) {
+    .emergencies .each_emergencies {
         height: 12rem;
         margin: 2rem;
         width: 180px;
     }
-    .emergencies .each_emergencies a{
+    .emergencies .each_emergencies a {
         font-size: 1.5rem;
     }
 }
-@media(min-width:800px){
+
+@media(min-width:800px) {
     /* Burns */
-    .contents_burns ul li{
+    .contents_burns ul li {
         font-size: 1.7rem;
     }
     /* drowning steps on desktop */
-    .contents_drown .steps .text ol img{
+    .contents_drown .steps .text ol img {
         display: none;
     }
-    .contents_drown .steps .text ol li{
+    .contents_drown .steps .text ol li {
         font-size: 1.6rem;
     }
-    .contents_drown .steps .img_steps{
+    .contents_drown .steps .img_steps {
         display: flex;
         flex-direction: column;
         height: 2200px;
         justify-content: space-around;
         width: 40%;
     }
-    .contents_drown .steps{
+    .contents_drown .steps {
         display: flex;
         flex-direction: row-reverse;
     }
-    .contents_drown .steps .img_steps img{
+    .contents_drown .steps .img_steps img {
         display: flex;
         flex-direction: column;
         width: 400px;
         height: 300px;
         border-radius: 1px solid black;
     }
-    .contents_drown .steps .text ol .top{
+    .contents_drown .steps .text ol .top {
         font-size: 1.5rem;
     }
-    .main p,.main h3{
+    .main p,
+    .main h3 {
         font-size: 1.5rem;
     }
-    .contents a{
+    .contents a {
         font-size: 1.8rem;
     }
-    .emergencies .each_emergencies{
+    .emergencies .each_emergencies {
         height: 12rem;
         margin: 2rem;
         width: 250px;
-
     }
-    .emergencies .each_emergencies a{
+    .emergencies .each_emergencies a {
         color: white;
         font-size: 2rem;
     }
-    .emergencies{
+    .emergencies {
         margin-top: 7rem;
     }
-    .navBars{
+    .navBars {
         display: none;
     }
-    .header nav .logo{
+    .header nav .logo {
         font-size: 2rem;
     }
-    .lists ul li a{
+    .lists ul li a {
         color: white;
         cursor: pointer;
     }
-    .list{
+    .list {
         display: flex;
         justify-content: space-between;
         width: 60%;
         align-items: center;
     }
-    .list ul{
+    .list ul {
         display: flex;
         flex-direction: row;
         color: white;
@@ -453,53 +524,60 @@ nav a{
         justify-content: space-around;
         width: 100%;
     }
-    nav{
+    nav {
         background-color: var(--dark);
         height: 6rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .main{
+    .main {
         display: flex;
         flex-direction: row;
         min-width: 600px;
         width: 100%;
         flex-wrap: wrap;
-        align-items:center;
+        align-items: center;
         justify-content: space-around;
+        text-align: center;
     }
-    .lists{
+    .lists {
         display: none;
     }
-    .categories{
+    .categories {
         display: flex;
         flex-direction: column;
         width: 80%;
         overflow: hidden;
     }
-    .categories .inhaled,.categories .onSkin,.categories .Swallowed{
+    .categories .inhaled,
+    .categories .onSkin,
+    .categories .Swallowed {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-top: 3rem;
     }
-    .categories .inhaled p,.categories .onSkin p,.categories .Swallowed p{
+    .categories .inhaled p,
+    .categories .onSkin p,
+    .categories .Swallowed p {
         font-size: 1.6rem;
         width: 450px;
     }
-    .categories .inhaled h3,.categories .onSkin h3,.categories .Swallowed h3{
+    .categories .inhaled h3,
+    .categories .onSkin h3,
+    .categories .Swallowed h3 {
         font-size: 2rem;
     }
-    .contents_burns{
+    .contents_burns {
         margin-top: 7rem;
         max-width: 1200px;
     }
-    .contents_burns .img_div img{
+    .contents_burns .img_div img {
         width: 100%;
     }
-    .contents_drown{
+    .contents_drown {
         margin-top: 7rem;
         position: absolute;
         max-width: 2000px;
@@ -508,44 +586,46 @@ nav a{
         justify-content: center;
         width: 100%;
     }
-
-    .contents_drown p,.electric_contents p,    .electric_contents ul{
+    .contents_drown p,
+    .electric_contents p,
+    .electric_contents ul {
         width: 80%;
         flex-direction: column;
         max-width: 1500px;
         font-size: 2rem;
     }
-    .contents_drown .img_div{
+    .contents_drown .img_div {
         width: 80%;
         height: 400px;
     }
-    .electric_contents ul{
+    .electric_contents ul {
         margin-top: 2rem;
     }
-    .electric_contents ul li{
+    .electric_contents ul li {
         margin-top: 2rem;
         list-style: circle;
     }
-    .electric_contents h2{
+    .electric_contents h2 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
-    .contents_drown h2{
+    .contents_drown h2 {
         font-size: 2rem;
     }
-    .contents_drown a,.electric_contents a{
+    .contents_drown a,
+    .electric_contents a {
         display: flex;
         align-self: start;
         font-size: 2rem;
     }
-    .contents_drown .note{
+    .contents_drown .note {
         margin-top: 5rem;
     }
-    .electric_contents .img_div{
+    .electric_contents .img_div {
         width: 500px;
         height: 300px;
     }
-    .electric_contents{
+    .electric_contents {
         margin-top: 7rem;
     }
 }
