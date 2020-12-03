@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+    <link href="../styles/general.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="./index.html">Innovation Geeks</a>
+        <div class="navBars">
+          <i class="fa fa-bars fa-2x"></i>
+          <i class="fa fa-times fa-2x"></i>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="lists">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./ContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="loader">
+      <img src="../images/animation.svg" alt="loader" />
+    </div>
+    <div class="error_page">
+      <div class="image-wrapper">
+        <img src="../images/undraw_page_not_found_su7k.svg" alt="" srcset="" />
+      </div>
+      <div class="error-message">
+        <h2>Something went <span class="wrong">wrong</span></h2>
+        <p class="apology">We are very sorry for the inconveniences. It looks like you're trying to access a page that either has been deleted or has never existed</p>
+      </div>
+    </div>
+    <script>
+      const loaded = document.getElementById('loader');
+      const contents_burns = document.querySelector('.error_page');
+      setTimeout(() => {
+        loaded.style.display = 'none';
+        contents_burns.style.display = 'flex';
+      }, 3000);
+    </script>
+  </body>
+</html>

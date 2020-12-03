@@ -4,24 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile First Aid</title>
-    <link rel="stylesheet" href="../css/cpr.css" />
+    <link rel="stylesheet" href="../styles/partb.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav_items">
-        <p class="link">
-            <a href="../choking.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></i></a>
-        </p>
-        <h3 class="heading">Caustic Soda Ingestion</h3>
-      </div>
-    </nav>
-
-    <div class="container">
-        <div class="main">
+    <div class="header">
+        <nav>
+            <a href="./index.html">Innovation Geeks</a>
+            <div class="navBars">
+                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-times fa-2x"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="lists">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="containerB">
+        <div class="mains">
+            <a href="./Accidents.html" class="home"><i class="fa fa-arrow-left"></i>Back</a>
             <div class="definition">
                 <h2 class="def-heading">Caustic Soda Ingestion:</h2>
       
@@ -50,5 +66,6 @@
           </div>
         </div>
     </div>
+    <script src="../js/index.js"></script>
   </body>
 </html>
