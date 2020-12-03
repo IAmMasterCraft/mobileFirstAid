@@ -31,6 +31,7 @@ const loadPage = (pageName) => {
         //get and set nav bar
         $.get("./includes/nav_bar.html", (response) => {
             $("body").prepend(response);
+            allFunction();
         });
         if (status === "error") $("body").load("./pages/404.html");
     });
