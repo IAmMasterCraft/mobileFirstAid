@@ -4,9 +4,15 @@ const updateTitle = (title) => {
 
 const loadHome = () => {
     $("body").load("./home.html");
-    updateTitle("First Aid &mdash; Home");
+    updateTitle("First Aid - Home");
 }
 
+/**
+ * go back
+ */
+const goBack = () => {
+    window.history.back();
+}
 
 /**
  * Routing
@@ -26,14 +32,6 @@ const loadPage = (pageName) => {
         $.get("./includes/nav_bar.html", (response) => {
             $("body").prepend(response);
         });
-        //get and set footer
-        $.get("./includes/footer.html", (response) => {
-            $("body").append(response);
-        });
-        //get and set navigator
-        // $.get("./includes/navigator.html", (response) => {
-        //     $("body").append(response);
-        // });
         if (status === "error") $("body").load("./pages/404.html");
     });
 }

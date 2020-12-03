@@ -6,44 +6,65 @@
     width: 100%;
 }
 
-* {
-    box-sizing: border-box;
+.page-image {
+  max-width: 90%;
+  margin-bottom: 20px;
 }
 
-.row {
-    width: 100%;
-    margin: 2%;
-    padding: 5%;
+/*
+  AUTO GRID
+  Set the minimum item size with `--auto-grid-min-size` and you'll
+  get a fully responsive grid with no media queries.
+*/
+.auto-grid {
+  --auto-grid-min-size: 16rem;
 }
 
-/* create 1 column */
-.column-1 {
-    display: block;
-    width: 70%;
-    padding: 10px;
+.auto-grid > * {
+  max-width: 400px;
 }
 
-/* Create 2 equal columns that floats next to each other */
-
-.column-2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    /* height: 300px; */
+.auto-grid > * + * {
+  margin-top: 1rem;
 }
 
+@supports(display: grid) {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .auto-grid > * {
+    max-width: unset;
+  }
 
-/* Create three equal columns that floats next to each other */
+  .auto-grid > * + * {
+    margin-top: unset;
+  }
+}
 
-.column-3 {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    /* height: 300px; */
+/*
+  WRAPPER
+  A utility with a max width that contains child elements and horizontal centers them
+*/
+.wrapper {
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .poison-content {
-    padding: 15% 5% 15% 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+.item-title {
+    /* font-size: 55px; */
+}
+
+.item-description {
+    /* font-size: 20px; */
 }
 
 .card {
@@ -73,37 +94,5 @@
 
 .container-item {
     padding: 5px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-width: 300px;
-    position: absolute;
-    margin-top: 4rem;
-    width: 100%;
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 600px) {
-    .column-3 {
-        width: 100%;
-    }
-    .column-2 {
-        width: 100%;
-    }
-    .poison-content {
-        padding-top: 5%;
-        text-align: center;
-    }
+    max-width: 100%;
 }
