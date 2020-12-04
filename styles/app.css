@@ -11,6 +11,11 @@
   margin-bottom: 20px;
 }
 
+.back-button {
+  font-size: 20px;
+  padding: 5%;
+}
+
 /*
   AUTO GRID
   Set the minimum item size with `--auto-grid-min-size` and you'll
