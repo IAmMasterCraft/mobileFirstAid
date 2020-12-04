@@ -12,6 +12,7 @@ body {
   scroll-behavior: smooth;
   line-height: 30px;
   font-weight: 500;
+  background-color: #adefd1ff;
 }
 
 img {

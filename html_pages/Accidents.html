@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accidents</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/general.css"/>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/general.css" />
+  </head>
+  <body>
     <div class="header">
         <nav>
             <a href="./index.html">Innovation Geeks</a>
@@ -30,50 +33,74 @@
                 <li><a href="./ContactUs.html">Contact Us</a></li>
             </ul>
         </div>
+        <div class="list">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="lists">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./ContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
     <div id="loader">
-        <img src="../images/animation.svg" alt="loader"/>
+      <img src="../images/animation.svg" alt="loader" />
     </div>
     <div class="emergencies fade-in">
-        <div class="each_emergencies">
-            <a href="Poisoning.html">Poisoning</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="./burns.html">Burns</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="Drowning.html">Drowning</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="electric.html">Electric Shock</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="./cpr.html">CPR</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="./caustic.html">Caustic</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="./kerosene.html">Kerosene?</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="./choking.html">Chocking</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="#">Chocking</a>
-        </div>
-        <div class="each_emergencies">
-            <a href="#">Breathing<br/> Difficulties</a>
-        </div>
+      <div class="each_emergencies">
+        <a href="Poisoning.html">Poisoning</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./burns.html">Burns</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./Drowning.html">Drowning</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./electric.html">Electric Shock</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./cpr.html">CPR</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./bleeding.html">Bleeding</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./accidentVictim.html"
+          >Accident<br />
+          Victims</a
+        >
+      </div>
+      <div class="each_emergencies">
+        <a href="./caustic.html"
+          >Caustic<br />
+          Ingestion</a
+        >
+      </div>
+      <div class="each_emergencies">
+        <a href="./choking.html">Chocking</a>
+      </div>
+      <div class="each_emergencies">
+        <a href="./kerosene.html"
+          >Kerosoene<br />
+          Ingestion</a
+        >
+      </div>
     </div>
     <script>
-        const loaded=document.getElementById('loader')
-        const emergency=document.querySelector('.emergencies')
-        setTimeout(() => {
-            loaded.style.display='none';
-            emergency.style.display='flex'
-        }, 3000);
+      const loaded = document.getElementById('loader');
+      const emergency = document.querySelector('.emergencies');
+      setTimeout(() => {
+        loaded.style.display = 'none';
+        emergency.style.display = 'flex';
+      }, 3000);
     </script>
     <script src="../js/index.js"></script>
-</body>
+  </body>
 </html>
