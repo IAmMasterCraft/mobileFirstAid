@@ -424,6 +424,10 @@ nav a {
 
 /* Steps for minor burns */
 
+.wrong {
+  color: orangered;
+}
+
 .minor ul {
     display: flex;
     flex-direction: column;

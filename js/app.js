@@ -8,6 +8,18 @@ const loadHome = () => {
 }
 
 /**
+ * DOM Loader
+ */
+const loaderElement = () => {
+    const loader = `
+        <div class="all">
+            <img src="../images/animation.svg" alt="loader" />
+        </div>
+    `;
+    return loader;
+}
+
+/**
  * go back
  */
 const goBack = () => {
@@ -25,16 +37,38 @@ const getRoute = () => {
  * pageLoad
  */
 const loadPage = (pageName) => {
-    $("body").load(`./pages/${pageName}.html`, (response, status) => {
-        //update title
-        updateTitle(`First Aid - ${pageName.toUpperCase().replace(/-/g, " ")}`);
-        //get and set nav bar
-        $.get("./includes/nav_bar.html", (response) => {
-            $("body").prepend(response);
+    //update title
+    updateTitle(`First Aid - ${pageName.toUpperCase().replace(/-/g, " ")}`);
+    //get and set nav bar
+    $.get("./includes/nav_bar.html", (response) => {
+        $("body").prepend(response);
+        try {
             allFunction();
-        });
-        if (status === "error") $("body").load("./pages/404.html");
+        } catch (error) {}
     });
+    //set loader
+    $("body").html(loaderElement);
+    //timeout to load content
+    setTimeout(() => {
+        $("body").load(`./pages/${pageName}.html`, (response, status) => {
+            //get and set nav bar
+            $.get("./includes/nav_bar.html", (response) => {
+                $("body").prepend(response);
+                allFunction();
+            });
+            if (status === "error") {
+                $("body").load("./pages/404.html", () => {
+                    //get and set nav bar
+                    $.get("./includes/nav_bar.html", (response) => {
+                        $("body").prepend(response);
+                        try {
+                            allFunction();
+                        } catch (error) {}
+                    });
+                });
+            }
+        });
+    }, 1000);
 }
 
 /**
