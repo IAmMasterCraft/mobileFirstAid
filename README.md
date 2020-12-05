@@ -1,5 +1,5 @@
 # mobileFirstAid
-An app that provides first aid instructions on-the-go.
+A Progressive Web Application that provides first aid instructions on-the-go.
 First aid refers to the emergency or immediate care you 
 should provide when a person is injured or ill until 
 full medical treatment is available. For minor conditions, 
@@ -19,6 +19,7 @@ substantially reduce the number of deaths and illnesses
 To provide basic first aid instruction to handle 
 accidents and emergencies until full medical treatment is 
 available
+To prevent death that arises from lack of immediate medical response to some minor and major accidents
 
 <hr> 
 
